@@ -3,12 +3,10 @@ Minimal in-memory JSON NoDB of legend.
 
 
 # Goals for usage
-- bind to unix socket, external program like nginx responsible for binding socket to port.
-- socket expects REST API.
-- cli utility automates REST API calls.
+- REST API interface
 
 # Goals for functionality
-- synchronous.
 - case sensitive.
 - binary permissions: db is either read only, or read/write.
-- key:value, parent:child structure.
+- In memory only, updates take place on volatile copy
+- Saving volatile copy to disk is possible with REST API
